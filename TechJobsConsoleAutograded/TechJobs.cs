@@ -46,7 +46,7 @@ namespace TechJobsConsole
                     {
                         List<string> results = JobData.FindAll(columnChoice);
 
-                        Console.WriteLine("\n*** All " + columnChoices[columnChoice] + " Values ***");
+                        Console.WriteLine(Environment.NewLine + "*** All " + columnChoices[columnChoice] + " Values ***");
                         foreach (string item in results)
                         {
                             Console.WriteLine(item);
@@ -59,7 +59,7 @@ namespace TechJobsConsole
                     string columnChoice = GetUserSelection("Search", columnChoices);
 
                     // What is their search term?
-                    Console.WriteLine("\nSearch term: ");
+                    Console.WriteLine(Environment.NewLine + "Search term: ");
                     string searchTerm = Console.ReadLine();
 
                     // Fetch results
@@ -97,11 +97,11 @@ namespace TechJobsConsole
             {
                 if (choiceHeader.Equals("View Jobs"))
                 {
-                    Console.WriteLine("\n" + choiceHeader + " by (type 'x' to quit):");
+                    Console.WriteLine(Environment.NewLine + choiceHeader + " by (type 'x' to quit):");
                 }
                 else
                 {
-                    Console.WriteLine("\n" + choiceHeader + " by:");
+                    Console.WriteLine(Environment.NewLine + choiceHeader + " by:");
                 }
 
                 for (int j = 0; j < choiceKeys.Length; j++)

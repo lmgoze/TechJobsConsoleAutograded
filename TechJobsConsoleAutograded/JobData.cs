@@ -59,6 +59,7 @@ namespace TechJobsConsole
                     if (aValue.ToLower().Contains(value.ToLower()))
                     {
                         jobs.Add(row);
+                        break; // ch3.2.5
                     }
                 }
             }

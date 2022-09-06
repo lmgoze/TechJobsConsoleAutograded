@@ -8,6 +8,7 @@ namespace TechJobsConsole
         {
             var techJobs = new TechJobs();
             techJobs.RunProgram();
-        }
+        
+         }
     }
 }
